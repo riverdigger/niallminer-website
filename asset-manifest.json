@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/niallminer-website/static/css/main.ce1040a1.css",
-    "main.js": "/niallminer-website/static/js/main.dde18ecd.js",
-    "index.html": "/niallminer-website/index.html",
-    "main.ce1040a1.css.map": "/niallminer-website/static/css/main.ce1040a1.css.map",
-    "main.dde18ecd.js.map": "/niallminer-website/static/js/main.dde18ecd.js.map"
+    "main.css": "/portfolio.git/static/css/main.ce1040a1.css",
+    "main.js": "/portfolio.git/static/js/main.dde18ecd.js",
+    "index.html": "/portfolio.git/index.html",
+    "main.ce1040a1.css.map": "/portfolio.git/static/css/main.ce1040a1.css.map",
+    "main.dde18ecd.js.map": "/portfolio.git/static/js/main.dde18ecd.js.map"
   },
   "entrypoints": [
     "static/css/main.ce1040a1.css",
