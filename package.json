@@ -1,5 +1,6 @@
 {
   "name": "niallminer-website",
+  "homepage": "https://riverdigger.github.io/niallminer-website",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
