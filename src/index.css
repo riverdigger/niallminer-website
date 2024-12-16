@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100;0,400;0,500;0,800;1,100;1,400;1,500;1,800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Saira', sans-serif;
+}
+
+.floating {
+    animation-name: floating;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+}
+
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(15px, 0px); }
+    100%   { transform: translate(-0, 0px); }
+}
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: calc(50%) solid transparent;
+  border-right: calc(50%) solid transparent;
+  border-top: 60px solid #f00;
+}
+
+.section-p {
+  scroll-margin-top: 5rem;
+}
+
+.max-h-88 {max-height: 22rem;}
+
+.shadow-inner-md {
+  --tw-shadow: inset 0 8px 10px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-svg{filter:drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.3))}
+
+.grow { transition: all .7s ease-in-out; }
+.grow:hover { transform: scale(1.05); }
+
+.grow-sm { transition: all .2s ease-in-out; }
+.grow-sm:hover { transform: scale(1.01); }
+
+.gradient-sm {
+  /* background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB); */
+  background: linear-gradient(-45deg, #ffed76, #e54b4b, #507dbc, #69c677);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 17s ease infinite;
+  -moz-animation: Gradient 17s ease infinite;
+  animation: Gradient 17s ease infinite;
+  }
+
+.gradient {
+  /* background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB); */
+  background: linear-gradient(-45deg, #ffed76, #ffed76, #e54b4b, #507dbc, #507dbc, #69c677, #69c677);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 17s ease infinite;
+  -moz-animation: Gradient 17s ease infinite;
+  animation: Gradient 17s ease infinite;
+  }
+
+.gradient-backwards {
+  /* background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB); */
+  background: linear-gradient(-45deg, #69c677, #69c677, #507dbc, #507dbc, #e54b4b, #ffed76, #ffed76);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 17s ease infinite;
+  -moz-animation: Gradient 17s ease infinite;
+  animation: Gradient 17s ease infinite;
+  }
+
+.gradient-text {
+  /* background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB); */
+  background: linear-gradient(-45deg, #69c677, #69c677, #507dbc, #507dbc, #e54b4b, #ffed76, #ffed76);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 17s ease infinite;
+  -moz-animation: Gradient 17s ease infinite;
+  animation: Gradient 17s ease infinite;
+  }
+
+.paused {
+  -webkit-animation-play-state: paused; /* Safari 4.0 - 8.0 */
+  animation-play-state: paused;
+}
+
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@-moz-keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
