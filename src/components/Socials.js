@@ -20,6 +20,7 @@ export default function Socials() {
               <a
                 href={social.href}
                 target="_blank"
+                rel="noreferrer"
                 >
                 <FontAwesomeIcon icon={social.icon} size="2x" className="shadow-svg" />
               </a>

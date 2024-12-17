@@ -38,13 +38,13 @@ export default function Projects() {
         <div id="projects_container" className={"flex flex-wrap justify-center mb-4 " + (isActive ? "" : "overflow-hidden max-h-88")}>
           {projects.map((project, i) => (
             <Zoom delay={i * 200} triggerOnce>
-            <div className={"grow-sm m-4 flex flex-col justify-between items-start rounded-md shadow-lg hover:shadow-sm h-80 max-h-80 w-80 bg-white p-4 ring-4" + (i % 4 == 0 ? " ring-red-400" : "" ) + (i % 4 == 1 ? " ring-green-500" : "" ) + (i % 4 == 2 ? " ring-indigo-500" : "" ) + (i % 4 == 3 ? " ring-yellow-500" : "" )}>
+            <div className={"grow-sm m-4 flex flex-col justify-between items-start rounded-md shadow-lg hover:shadow-sm h-80 max-h-80 w-80 bg-white p-4 ring-4" + (i % 4 === 0 ? " ring-red-400" : "" ) + (i % 4 === 1 ? " ring-green-500" : "" ) + (i % 4 === 2 ? " ring-indigo-500" : "" ) + (i % 4 === 3 ? " ring-yellow-500" : "" )}>
               <div>
                 <div className="w-full flex justify-between items-center">
-                  <a className="text-xl ml-1 text-gray-900 font-bold" href={project.link} target="_blank">{project.title}</a>
+                  <a className="text-xl ml-1 text-gray-900 font-bold" href={project.link} rel="noreferrer" target="_blank">{project.title}</a>
                   <div className="flex flex-grow justify-end items-center">
                   {project.links.map((link, i) => (
-                    <a href={link.link} target="_blank"><FontAwesomeIcon icon={link.icon} className="mr-2 font-bold text-2xl" /></a>
+                    <a href={link.link} target="_blank" rel="noreferrer"><FontAwesomeIcon icon={link.icon} className="mr-2 font-bold text-2xl" /></a>
                   ))}
                   </div>
                 </div>
@@ -61,6 +61,7 @@ export default function Projects() {
                 <a
                 href={project.link}
                 target="_blank"
+                rel="noreferrer"
                 className="w-1/3">
                 <img
                 alt="gallery"

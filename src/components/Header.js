@@ -1,4 +1,4 @@
-import { AttentionSeeker, Bounce, Fade } from "react-awesome-reveal";
+import { AttentionSeeker, Fade } from "react-awesome-reveal";
 
 export default function Header({text}) {
     return(
