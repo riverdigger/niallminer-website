@@ -41,7 +41,7 @@ export default function Landing() {
               <div className="flex justify-center shadow-md">
                 <a
                   href="#contact"
-                  className="inline-flex items-center text-white bg-gray-900 bg-opacity-20 transform -skew-x-12 px-3 hover:bg-gray-800 text-xl">
+                  className="inline-flex items-center text-white bg-green-400 bg-opacity-70 transform -skew-x-12 px-3 hover:bg-green-600 text-xl">
                   Let's Build Something
                   <FontAwesomeIcon icon={faArrowRight} className="w-f h-4 ml-1" />
                 </a>

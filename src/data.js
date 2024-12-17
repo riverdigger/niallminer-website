@@ -1,7 +1,25 @@
-import { faGithub, faLinkedin, faInstagram, faSpotify } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedin, faInstagram, faSpotify, faMicrosoft } from '@fortawesome/free-brands-svg-icons';
 import { faCode, faGamepad, faPhotoVideo, faRocket, faSearch, faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 
 export const experience = [
+  {
+    title: "Software Engineer II",
+    subtitle: "Microsoft",
+    description: [
+      "Developed and maintained an API gateway for an edge/cloud IoT environment",
+      "Containerized API for use in Kubernetes deployments",
+      "Added deployment pipelines and E2E test pipelines for infrastructure",
+      "Improved security of existing infrastructure by utilizing managed identities in 70+ services",
+    ],
+    image: "./aio.png",
+    link: "https://azure.microsoft.com/en-us/products/iot-operations",
+    tags: [
+      "Golang",
+      "NodeJS",
+      ".NET",
+    ],
+    icon: faMicrosoft,
+  },
   {
     title: "Ruby Developer",
     subtitle: "WellFence",

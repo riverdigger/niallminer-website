@@ -2,7 +2,9 @@
 
 import React from "react";
 import Header from "./Header";
+import Tag from "./Tag";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCaretRight } from "@fortawesome/free-solid-svg-icons";
 import { experience } from "../data";
 
 export default function Work() {
@@ -38,14 +40,17 @@ export default function Work() {
                   </h1>
                   <h1 className="text-xl italic text-gray-900">{project.subtitle}</h1>
                 </div>
-                  <ul className={"text-left text-white rounded-md px-4 py-2 shadow-md w-full" + (i % 4 === 0 ? " bg-red-400" : "" ) + (i % 4 === 1 ? " bg-green-500" : "" ) + (i % 4 === 2 ? " bg-indigo-500" : "" ) + (i % 4 === 3 ? " bg-yellow-500" : "" )}>
-                  {project.description.map((description) => (
-                    <li><span className={"mr-2 font-bold" + (i % 4 === 0 ? " text-red-600" : "" ) + (i % 4 === 1 ? " text-green-700" : "" ) + (i % 4 === 2 ? " text-indigo-700" : "" ) + (i % 4 === 3 ? " text-yellow-700" : "" )}></span>{description}</li>
-                  ))}
+                <div className="mb-2">
+                  <ul className="text-left text-gray-900 rounded-md px-4 py-2 relative z-10 shadow-md w-full bg-white">
+                    {project.description.map((description) => (
+                      <li><FontAwesomeIcon icon={faCaretRight} className="mr-2" />{description}</li>
+                    ))}
                   </ul>
+                  <div className={"text-left rounded-md px-4 py-2 shadow-md w-full -my-2 absolute z-0" + (i % 4 === 0 ? " bg-red-400" : "" ) + (i % 4 === 1 ? " bg-green-500" : "" ) + (i % 4 === 2 ? " bg-indigo-500" : "" ) + (i % 4 === 3 ? " bg-yellow-500" : "" )}></div>
+                </div>
                 <div className="flex w-full justify-center items-center my-2 rounded-b-lg bg-white md:rounded-none md:bg-transparent">
                   {project.tags.map((tag) => (
-                    <div className="text-gray-900 w-1/4 mx-2">{tag}</div>
+                    <Tag text={tag} i={i} />
                   ))}
                 </div>
               </div>
