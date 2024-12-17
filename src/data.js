@@ -91,37 +91,34 @@ export const experience = [
 
 export const projects = [
   {
-    title: "NFT Website",
-    description: "Created a ReactJS website to host all of the artwork for an NFT I made using my pixel art assets. These collectable villagers now have a place to live!",
-    link: "https://www.windfallvillage.com/",
+    title: "Unreal Engine 5 Project",
+    description: "I am developing a competitive roguelite MOBA, with a heavy emphasis on teamwork, unique builds, and skill expression. Join and host games of 5v5, where teams will work together to eliminate all enemy players or capture their flag.",
+    links: [
+      {link: "https://mousen.itch.io/mousen", icon: faGithub},
+    ],
+    tags: [
+      "UE5",
+      "C++",
+    ],
+    image: "",
+    active: true,
+  },
+  {
+    title: "Windfall Village Website",
+    description: "Created a ReactJS website to host all of the artwork for I made using my pixel art assets. These collectable villagers now have a place to live!",
     links: [
       {link: "https://www.windfallvillage.com/", icon: faExternalLinkAlt},
     ],
     tags: [
       "ReactJS",
-      "NFT",
+      "Pixel Art",
     ],
-    icon: faSearch,
     image: "./lineup.png",
-  },
-  {
-    title: "Order PDF Analyzer",
-    description: "Drilling Tools Intl online shopping API add-on to make it easier for part order creation. This app accepts a Schlumberger order PDF and parses the file to show resulting part list and similar items for a DTI shopping cart.",
-    link: "https://compass-uploader.herokuapp.com/",
-    links: [
-      {link: "https://compass-uploader.herokuapp.com/", icon: faExternalLinkAlt},
-    ],
-    tags: [
-      "OCR",
-      "Ruby",
-    ],
-    icon: faSearch,
-    image: "./compass_project.png",
+    active: false,
   },
   {
     title: "Top-Down Pixel RPG",
-    description: "Role playing game written in the Godot engine with over 1,249,500 different possible character combinations. Utilizes UI/UX pixel art as well as Zelda-like game mechanics. Still in development!",
-    link: "https://github.com/riverdigger/WindFall",
+    description: "Role playing demo written in the Godot engine with over 1,249,500 different possible character combinations. Utilizes UI/UX pixel art as well as Zelda-like game mechanics.",
     links: [
       {link: "https://github.com/riverdigger/WindFall", icon: faGithub},
     ],
@@ -129,26 +126,37 @@ export const projects = [
       "Godot",
       "Pixel Art",
     ],
-    icon: faSearch,
     image: "./run_left.gif",
+    active: false,
+  },
+  {
+    title: "Order PDF Analyzer",
+    description: "Drilling Tools Intl online shopping API add-on to make it easier for part order creation. This app accepts a Schlumberger order PDF and parses the file to show resulting part list and similar items for a DTI shopping cart.",
+    links: [
+      {link: "https://compass-uploader.herokuapp.com/", icon: faExternalLinkAlt},
+    ],
+    tags: [
+      "OCR",
+      "Ruby",
+    ],
+    image: "./compass_project.png",
+    active: false,
   },
   {
     title: "Drawing Mobile App",
     description: "Mobile app with mobile drawing in mind, while still keeping things simple. Coded in Android Studio, Pixelli is an app that allows for local saving to your device, as well as Pixelli’s own gallery in app.",
-    link: "https://www.youtube.com/watch?v=mKBNUeW3T1Q",
     links: [
       {link: "https://www.youtube.com/watch?v=mKBNUeW3T1Q", icon: faExternalLinkAlt},
     ],
     tags: [
       "Android Studio",
     ],
-    icon: faSearch,
     image: "./pixelli.png",
+    active: false,
   },
   {
     title: "Blinn-Phong Research",
     description: "Research paper about a depth based cel shader program written in OpenGL. The program optimizes render performance by lowering the polygon count of objects further away from the camera.",
-    link: "./graphics_project_proposal.pdf",
     links: [
       {link: "./graphics_project_proposal.pdf", icon: faExternalLinkAlt},
     ],
@@ -156,8 +164,8 @@ export const projects = [
       "OpenGL",
       "Blinn-Phong",
     ],
-    icon: faSearch,
     image: "./cel_shaded.png",
+    active: false,
   },
 ];
 

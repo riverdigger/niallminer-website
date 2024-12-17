@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+@media (min-width: 768px) {
+  .swiper-slide {
+    height: 100%;
+    width: 20rem;
+  }
+}

@@ -16,18 +16,21 @@ export default function Contact() {
           </div>
           }
         />
-        <div className="md:w-1/2 w-full flex flex-col text-center m-auto md:py-8 mt-8 md:mt-0">
+        <div className="md:w-3/4 w-full flex flex-col text-center m-auto md:py-8 mt-8 md:mt-0">
           <p className="leading-relaxed mb-5 text-gray-200 text-xl">
-          I'd love to have a conversation about the projects you're working on and would love to know if you'd like to work on any with me.</p>
+          I'm excited to hear about your projects and would love to know if you'd be interested in collaborating on any of them with me.</p>
           <p className="leading-relaxed mb-5 text-gray-200 text-xl">Please reach out and I'll get back to you soon.
           </p>
-          <a
-            href="mailto:niallminer@gmail.com"
-            rel="noreferrer"
-            target="_blank"
-            className="gradient-sm p-4 text-white rounded text-2xl">
-            Email
-          </a>
+          <div className="gradient-sm p-1 pb-3 hover:pb-2 hover:mt-1 rounded flex w-full flex-start justify-center">
+            <a
+              href="mailto:niallminer@gmail.com"
+              rel="noreferrer"
+              target="_blank"
+              className="p-4 text-gray-900 bg-gray-200 rounded text-2xl w-full hover:bg-gray-300">
+              Email
+            </a>
+
+          </div>
         </div>
         <p className="mt-24 text-center text-white">Made by Niall Miner with ReactJS</p>
       </div>

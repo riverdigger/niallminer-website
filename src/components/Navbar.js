@@ -5,9 +5,19 @@ import { faPaperclip } from '@fortawesome/free-solid-svg-icons';
 import React from "react";
 
 export default function Navbar() {
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+  });
+
   return (
-    <header className="bg-white sm:sticky top-0 z-10">
-      <div className="container mx-auto flex flex-wrap p-5 flex-col sm:flex-row items-center">
+    <header className="bg-white sm:sticky top-0 z-50">
+      <div className="container mx-auto flex flex-wrap px-5 py-3 flex-col sm:flex-row items-center">
         <a href="#landing">
           <img
           className="object-cover object-center rounded"
@@ -21,6 +31,9 @@ export default function Navbar() {
           </a>
           <a href="#work" className="mr-5 hover:text-gray-400">
             Work
+          </a>
+          <a href="#projects" className="mr-5 hover:text-gray-400">
+            Projects
           </a>
           <a href="#contact" className="mr-5 hover:text-gray-400">
             Contact
